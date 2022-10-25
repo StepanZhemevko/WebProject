@@ -6,7 +6,13 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<c:set var="language" value="${not empty param.language ? param.language : not empty language ? language : 'en'}" scope="session" />
+<fmt:setLocale value ="${language}" />
+<fmt:setBundle basename="messages.deleteMag"/>
+<html lang="${language}">
 <head>
     <style>
         body {
@@ -15,15 +21,25 @@
             background: linear-gradient(120deg, #2980b9, #8e44ad);
             height: 70vh;
         }
+        .center{
+            text-align: center;
+            font-size: 16px;
+            padding: 4em;
+        }
+
     </style>
     <title>Delete</title>
 </head>
 <body>
+<div class="center">
 <form action="DeleteMagazineServlet" method="post">
-    <label>Enter number of magazine you want to delete</label>
+
+    <label style="color: antiquewhite" ><fmt:message key="deleteMag.label.q"/></label>
     <p><input type="number" name="delete"></p>
     <span></span>
-    <p><input type="submit" value="submit"></p>
+    <p><input type="submit" value="<fmt:message key="deleteMag.submit"/>"></p>
+
 </form>
+</div>
 </body>
 </html>

@@ -8,7 +8,13 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<c:set var="language" value="${not empty param.language ? param.language : not empty language ? language : 'en'}" scope="session" />
+<fmt:setLocale value ="${language}" />
+<fmt:setBundle basename="messages.store"/>
+<html lang="${language}">
 <head>
     <style type="text/css">
         body {
@@ -38,13 +44,13 @@
 <hr>
 <table border="1" width="60%">
     <tr>
-        <td><b>Magazine №</b></td>
-        <td><b>Magazine Name</b></td>
-        <td><b>Price</b></td>
-        <td><b>Description</b></td>
-        <td><b>Image</b></td>
-        <td><b>Category</b></td>
-        <td><b>Publisher</b></td>
+        <td><b><fmt:message key="store.label.mag#"/></b></td>
+        <td><b><fmt:message key="store.label.name"/></b></td>
+        <td><b><fmt:message key="store.label.prise"/></b></td>
+        <td><b><fmt:message key="store.label.descr"/></b></td>
+        <td><b><fmt:message key="store.label.image"/></b></td>
+        <td><b><fmt:message key="store.label.category"/></b></td>
+        <td><b><fmt:message key="store.label.publisher"/></b></td>
     </tr>
     <%try{
         Class.forName("com.mysql.jdbc.Driver");
@@ -68,7 +74,7 @@
             <input type="hidden" name="image" value="<%= rs.getString("image_link")%>" />
             <input type="hidden" name="magazinePrise" value="<%= rs.getInt("prise")%>" />
 
-            <input type="submit" value="Order" name="order">
+            <input type="submit" value="<fmt:message key="store.submit.order"/>" name="order">
         </form></td>
     </tr>
 

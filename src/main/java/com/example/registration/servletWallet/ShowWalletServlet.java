@@ -21,7 +21,7 @@ public class ShowWalletServlet extends HttpServlet {
         String dbUname = "root";
         String dbPassword = "011235813Steve";
         HttpSession session = request.getSession();
-        int wallet_id;
+        int walletId;
         double balance;
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -33,9 +33,9 @@ public class ShowWalletServlet extends HttpServlet {
 
             ResultSet rs = pst.executeQuery(sql);
             if (rs.next()){
-                wallet_id = rs.getInt("user_id");
+                walletId = rs.getInt("user_id");
                 balance = rs.getDouble("balance");
-                session.setAttribute("wallet_id",wallet_id);
+                session.setAttribute("wallet_id",walletId);
                 session.setAttribute("balance",balance);
             }
 

@@ -20,12 +20,12 @@ public class CreateWalletServlet extends HttpServlet {
         String dbUname = "root";
         String dbPassword = "011235813Steve";
         HttpSession session = request.getSession();
-        int wallet_id = (int) session.getAttribute("id");
+        int walletId = (int) session.getAttribute("id");
         double balance = 0.0;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
-            String sql="INSERT INTO mydb.wallet (user_id, balance) VALUES ('"+wallet_id+"','"+balance+"')";
+            String sql="INSERT INTO mydb.wallet (user_id, balance) VALUES ('"+walletId+"','"+balance+"')";
             PreparedStatement preparedStatement = con.prepareStatement(sql);
             preparedStatement.executeUpdate();
             response.sendRedirect("wallet.jsp");

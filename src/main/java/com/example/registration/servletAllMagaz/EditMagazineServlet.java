@@ -25,8 +25,8 @@ public class EditMagazineServlet extends HttpServlet {
         int prise= Integer.parseInt(request.getParameter("magazinePrise"));
         String description= request.getParameter("magazineDescription");
         String imageLink= request.getParameter("imageLink");
-        int category_id= Integer.parseInt(request.getParameter("magazineCat"));
-        int publisher_id= Integer.parseInt(request.getParameter("magazinePub"));
+        int categoryId= Integer.parseInt(request.getParameter("magazineCat"));
+        int publisherId= Integer.parseInt(request.getParameter("magazinePub"));
 
         String dbUrl = "jdbc:mysql://localhost:3306/mydb";
         String dbUname = "root";
@@ -36,7 +36,7 @@ public class EditMagazineServlet extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
             Statement pst = con.createStatement();
-            String sql = "update mydb.magazines set magazines_name = '"+name+"', prise = '"+prise+"', description = '"+description+"', image_link= '"+imageLink+"',categories_id = '"+category_id+"',publishers_id='"+publisher_id+"' where id ='"+id+"' ";
+            String sql = "update mydb.magazines set magazines_name = '"+name+"', prise = '"+prise+"', description = '"+description+"', image_link= '"+imageLink+"',categories_id = '"+categoryId+"',publishers_id='"+publisherId+"' where id ='"+id+"' ";
             pst.executeUpdate(sql);
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);

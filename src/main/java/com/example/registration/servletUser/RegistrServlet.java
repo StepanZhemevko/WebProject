@@ -19,12 +19,12 @@ public class RegistrServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
-        String name_and_surname = request.getParameter("name_and_surname");
+        String nameAndSurname = request.getParameter("name_and_surname");
         String email = request.getParameter("email");
         String telephone = request.getParameter("telephone");
 
 
-        Member member = new Member(login,password,name_and_surname,email,telephone);
+        Member member = new Member(login,password,nameAndSurname,email,telephone);
 
          RegisterDao registerDao = new RegisterDao();
          registerDao.insert(member);

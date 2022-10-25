@@ -5,7 +5,14 @@
   Time: 17:25
   To change this template use File | Settings | File Templates.
 --%>
-<html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<c:set var="language" value="${not empty param.language ? param.language : not empty language ? language : 'en'}" scope="session" />
+<fmt:setLocale value ="${language}" />
+<fmt:setBundle basename="messages.subscription"/>
+<html lang="${language}">
 <head>
     <style type="text/css">
         body {
@@ -33,24 +40,23 @@
 </head>
 <body>
 <div class="to_cabinet">
-    <a id="my_cabinet" href="cabinet.jsp" >My Cabinet</a>
+    <a id="my_cabinet" href="cabinet.jsp" ><fmt:message key="subscription.label.my_cab"/></a>
 </div>
 <hr>
 
 <div class="form">
 
     <label><img src="<%= session.getAttribute("image") %>" width="100" height="100"></label>
-    <p><label>Magazine name: <%=session.getAttribute("magazine_name")%></label></p>
-    <p><label>Start order day: <%=session.getAttribute("begin_time")%></label></p>
-    <p><label>Your id is: <%=session.getAttribute("id")%></label></p>
-    <p><label>Your Balance: <%=session.getAttribute("balance")%></label></p>
+    <p><label><fmt:message key="subscription.label.name"/> <%=session.getAttribute("magazine_name")%></label></p>
+    <p><label><fmt:message key="subscription.label.stdate"/> <%=session.getAttribute("begin_time")%></label></p>
+    <p><label><fmt:message key="subscription.label.id"/> <%=session.getAttribute("id")%></label></p>
+    <p><label><fmt:message key="subscription.label.balance"/> <%=session.getAttribute("balance")%></label></p>
     <form action="MakeOrderServlet" method="post">
         <input type="date" name="end_date" required>
         <span></span>
         <label>And date</label>
-        <input type="submit" value="Submit">
+        <input type="submit" value="<fmt:message key="subscription.submit"/>">
     </form>
-
 </div>
 </body>
 </html>

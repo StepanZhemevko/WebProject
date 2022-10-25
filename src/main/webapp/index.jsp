@@ -1,6 +1,14 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<c:set var="language" value="${not empty param.language ? param.language : not empty language ? language : 'en'}" scope="session" />
+<fmt:setLocale value ="${language}" />
+<fmt:setBundle basename="messages.messages"/>
+
 <!DOCTYPE html>
-<html>
+<html lang="${language}">
 <head>
     <style type="text/css">
         body {
@@ -26,36 +34,35 @@
             font-size: 25px;
             color: azure;
             text-decoration: none;
-        }   
+        }
         h1 {
             text-align: center;
             font-size: 200%;
             font-family: Arial;
         }
-        .unique {
-            font-size:200%;
-        }
-        .firs_leter {
-            font-size:170%;
-            font-style: oblique;
-        }
+
     </style>
     <title>Welcome!</title>
 
 </head>
 <body>
+<form>
+    <select id="language" name="language" onchange="submit()">
+        <option value="en" ${language == 'en' ? 'selected' : ''}>English</option>
+        <option value="uk" ${language == 'uk' ? 'selected' : ''}>Ukraine</option>
+    </select>
+</form>
 <h1>
-    <div class="unique">
-        <span class="firs_leter">W</span>elcome!</div>
+
+        <label><fmt:message key="index.label.welcome"/></label>
 </h1>
 <hr>
 <div class="signup_link">
-    <a href="${pageContext.request.contextPath}/registration.jsp" style="float: left;">Registration </a>
 
-    <a href="${pageContext.request.contextPath}/login.jsp" style="float: right;">Log in </a>
+    <a href="${pageContext.request.contextPath}/registration.jsp" style="float: left;"> <label><fmt:message key="index.label.register"/></label></a>
+    <a href="${pageContext.request.contextPath}/login.jsp" style="float: right;"><label><fmt:message key="index.label.login"/></label> </a>
 
 </div>
-
 </body>
 
 </html>

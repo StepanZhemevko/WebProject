@@ -20,7 +20,7 @@ public class CabinetServlet extends HttpServlet {
         String login = request.getParameter("login");
         String password=null;
         String id=null;
-        String name_and_surname = null;
+        String nameAndSurname = null;
         String email = null;
         String telephone = null;
         boolean block;
@@ -40,14 +40,14 @@ public class CabinetServlet extends HttpServlet {
             {
                 id=rs.getString("id");
                 password = rs.getString("password");
-                name_and_surname=rs.getString("name_and_surname");
+                nameAndSurname=rs.getString("name_and_surname");
                 email= rs.getString("email");
                 telephone= rs.getString("telephone");
                 block = (boolean) session.getAttribute("block");
 
                 session.setAttribute("id",id);
                 session.setAttribute("password",password);
-                session.setAttribute("name_and_surname",name_and_surname);
+                session.setAttribute("name_and_surname",nameAndSurname);
                 session.setAttribute("email",email);
                 session.setAttribute("telephone",telephone);
                 session.setAttribute("block",block);

@@ -13,23 +13,19 @@ import java.sql.Statement;
 @WebServlet(name = "UpBalanceServlet", value = "/UpBalanceServlet")
 public class UpBalanceServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
-    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         String dbUrl = "jdbc:mysql://localhost:3306/mydb";
         String dbUname = "root";
         String dbPassword = "011235813Steve";
-        double new_balance = Double.parseDouble(request.getParameter("amount"));
-        int wallet_id = (int) session.getAttribute("id");
-        double balance = (double) session.getAttribute("balance")+ new_balance;
+        double newBalance = Double.parseDouble(request.getParameter("amount"));
+        int walletId = (int) session.getAttribute("id");
+        double balance = (double) session.getAttribute("balance") + newBalance;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
             Statement pst = con.createStatement();
-            String sql="update mydb.wallet set balance='"+balance+"' where user_id='"+wallet_id+"'";
+            String sql = "update mydb.wallet set balance='" + balance + "' where user_id='" + walletId + "'";
 
             pst.executeUpdate(sql);
         } catch (ClassNotFoundException | SQLException e) {

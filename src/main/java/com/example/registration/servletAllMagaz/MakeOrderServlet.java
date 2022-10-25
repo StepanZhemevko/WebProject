@@ -30,20 +30,20 @@ public class MakeOrderServlet extends HttpServlet {
         HttpSession session = request.getSession();
 
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-        Date start_date = new Date();
-        String time_now = formatter.format(start_date);
+        Date startDate = new Date();
+        String timeNow = formatter.format(startDate);
 
-        String end_date = request.getParameter("end_date");
+        String endDate = request.getParameter("end_date");
 
 
 
-        int user_id= (int) session.getAttribute("id");
+        int userId= (int) session.getAttribute("id");
         String temp =  session.getAttribute("magazine_id").toString();
-        int magazine_id = Integer.parseInt(temp);
-        double magazine_prise = Double.parseDouble(session.getAttribute("magazine_prise").toString());
+        int magazineId = Integer.parseInt(temp);
+        double magazinePrise = Double.parseDouble(session.getAttribute("magazine_prise").toString());
         String temp2 =  session.getAttribute("balance").toString();
-        double new_balance = Double.parseDouble(temp2);
-        new_balance = new_balance - magazine_prise;
+        double newBalance = Double.parseDouble(temp2);
+        newBalance  = newBalance  - magazinePrise;
 
      /*  PrintWriter out = response.getWriter();
         out.print("<html><body>");
@@ -54,9 +54,9 @@ public class MakeOrderServlet extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
             String sql="INSERT INTO mydb.subscription (start_date, finish_date, status, user_id, magazines_id) " +
-                    "VALUES ('"+time_now+"','"+end_date+"','"+ OrderStatus.ACTIVE+"','"+user_id+"','"+magazine_id+"')";
+                    "VALUES ('"+timeNow+"','"+endDate+"','"+ OrderStatus.ACTIVE+"','"+userId+"','"+magazineId+"')";
 
-            String sql2 = "update mydb.wallet set balance = '"+new_balance+"' where user_id= '"+user_id+"'";
+            String sql2 = "update mydb.wallet set balance = '"+newBalance+"' where user_id= '"+userId+"'";
             PreparedStatement pst = con.prepareStatement(sql);
 
             pst.executeUpdate();

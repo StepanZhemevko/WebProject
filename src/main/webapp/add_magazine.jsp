@@ -6,7 +6,13 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<c:set var="language" value="${not empty param.language ? param.language : not empty language ? language : 'en'}" scope="session" />
+<fmt:setLocale value ="${language}" />
+<fmt:setBundle basename="messages.addMagazine"/>
+<html lang="${language}">
 <head>
     <style type="text/css">
         body {
@@ -60,37 +66,37 @@
     <title>Add Magazines</title>
 </head>
 <div class="to_cabinet">
-<a id="my_cabinet" href="cabinet.jsp" >My Cabinet</a>
+<a id="my_cabinet" href="cabinet.jsp" ><fmt:message key="addMagazine.label.my_cabinet"/></a>
 <hr>
 </div>
 <body>
 <div class="change">
     <form action="AddMagazineServlet" method="post">
-        <label>Magazine name</label>
+        <label><fmt:message key="addMagazine.label.name"/></label>
         <p><input type="text" name="magazine_name"  required></p>
         <span></span>
 
-        <label>Prise</label>
+        <label><fmt:message key="addMagazine.label.prise"/></label>
         <p><input type="number" name="prise" required></p>
         <span></span>
 
-        <label>Description</label>
+        <label><fmt:message key="addMagazine.label.descr"/></label>
         <p><input type="text" name="description"></p>
         <span></span>
 
-        <label>Image link</label>
+        <label><fmt:message key="addMagazine.label.image"/></label>
         <p><input type="text" name="image_link" required></p>
         <span></span>
 
-        <label>Categories</label>
+        <label><fmt:message key="addMagazine.label.categories"/></label>
         <p><input type="text" name="category"  required> </p>
         <span></span>
 
-        <label>Publisher</label>
+        <label><fmt:message key="addMagazine.label.publisher"/></label>
         <p><input type="text" name="publisher"  required>  </p>
         <span></span>
 
-        <p><input type="submit" value="Add Magazine"></p>
+        <p><input type="submit" value="<fmt:message key="addMagazine.submit"/>"></p>
     </form>
 </div>
 </body>

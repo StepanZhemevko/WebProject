@@ -1,6 +1,13 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<c:set var="language" value="${not empty param.language ? param.language : not empty language ? language : 'en'}" scope="session" />
+<fmt:setLocale value ="${language}" />
+<fmt:setBundle basename="messages.login"/>
 <!DOCTYPE html>
-<html>
+<html lang="${language}">
 <head>
   <meta charset="utf-8">
   <title>Login</title>
@@ -12,16 +19,16 @@
     <div class="txt_field">
       <input type="text" name="login" required>
       <span></span>
-      <label>Login</label>
+      <label><fmt:message key="login.label.login"/></label>
     </div>
     <div class="txt_field">
       <input type="password" name="password" required>
       <span></span>
-      <label>Password</label>
+      <label><fmt:message key="login.label.password"/></label>
     </div>
-    <input type="submit" value="Login">
+    <input type="submit" value="<fmt:message key="login.label.submit"/>">
     <div class="signup_link">
-      Not a member? <a href="${pageContext.request.contextPath}/registration.jsp">Signup</a>
+      <fmt:message key="login.label.not"/> <a href="${pageContext.request.contextPath}/registration.jsp"><fmt:message key="login.label.signup"/></a>
     </div>
   </form>
 </div>

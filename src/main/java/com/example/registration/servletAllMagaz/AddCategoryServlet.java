@@ -13,14 +13,10 @@ import java.sql.Statement;
 @WebServlet(name = "AddCategoryServlet", value = "/AddCategoryServlet")
 public class AddCategoryServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    }
-
-    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //HttpSession session = request.getSession();
 
-        String category_name = request.getParameter("category_name");
+        String categoryName = request.getParameter("category_mame");
 
 
         String dbUrl = "jdbc:mysql://localhost:3306/mydb";
@@ -31,7 +27,7 @@ public class AddCategoryServlet extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
             Statement pst = con.createStatement();
-            String sql = "INSERT INTO mydb.categories (category_name) VALUES ('" + category_name + "')";
+            String sql = "INSERT INTO mydb.categories (category_name) VALUES ('" + categoryName + "')";
 
             pst.executeUpdate(sql);
 

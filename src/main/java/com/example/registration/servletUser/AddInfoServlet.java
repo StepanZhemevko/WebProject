@@ -20,7 +20,7 @@ public class AddInfoServlet extends HttpServlet {
 
         String login = session.getAttribute("name").toString();
         String password = request.getParameter("password");
-        String name_and_surname = request.getParameter("name_and_surname");
+        String nameAndSurname = request.getParameter("name_and_surname");
         String email = request.getParameter("email");
         String telephone = request.getParameter("telephone");
 
@@ -32,7 +32,7 @@ public class AddInfoServlet extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
             Statement pst = con.createStatement();
-            String sql="update mydb.user set password='"+password+"', name_and_surname = '"+name_and_surname+"'" +
+            String sql="update mydb.user set password='"+password+"', name_and_surname = '"+nameAndSurname+"'" +
                     ",email='"+email+"',telephone='"+telephone+"' where login= '"+login+"'";
 
             pst.executeUpdate(sql);
