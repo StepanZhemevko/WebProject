@@ -55,7 +55,7 @@
             <label><fmt:message key="addInfo.label.password" /></label>
         </div>
         <div class="txt_field">
-            <input type="text" name="name_and_surname" value="<%= session.getAttribute("name_and_surname") %>" required>
+            <input type="text" name="name_and_surname" value="<%= session.getAttribute("nameAndSurname") %>" required>
             <span></span>
             <label><fmt:message key="addInfo.label.name" /></label>
         </div>

@@ -5,16 +5,16 @@ import java.io.Serializable;
 public class Member implements Serializable{
     private String login;
     private String password;
-    private String name_and_surname;
+    private String nameAndSurname;
     private String email;
     private String telephone;
     private boolean admin = false;
     private boolean block = false;
 
-    public Member(String login, String password, String name_and_surname, String email, String telephone) {
+    public Member(String login, String password, String nameAndSurname, String email, String telephone) {
         this.login = login;
         this.password = password;
-        this.name_and_surname = name_and_surname;
+        this.nameAndSurname = nameAndSurname;
         this.email = email;
         this.telephone = telephone;
 
@@ -48,12 +48,12 @@ public class Member implements Serializable{
         this.password = password;
     }
 
-    public String getName_and_surname() {
-        return name_and_surname;
+    public String getNameAndSurname() {
+        return nameAndSurname;
     }
 
-    public void setName_and_surname(String name_and_surname) {
-        this.name_and_surname = name_and_surname;
+    public void setNameAndSurname(String nameAndSurname) {
+        this.nameAndSurname = nameAndSurname;
     }
 
     public String getEmail() {

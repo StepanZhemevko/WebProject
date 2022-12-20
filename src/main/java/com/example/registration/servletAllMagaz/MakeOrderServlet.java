@@ -1,5 +1,6 @@
 package com.example.registration.servletAllMagaz;
 
+import com.example.registration.sql.DBCPDataSource;
 import com.example.registration.sql.OrderStatus;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
@@ -15,17 +16,9 @@ import java.util.Date;
 
 @WebServlet(name = "MakeOrderServlet", value = "/MakeOrderServlet")
 public class MakeOrderServlet extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String result = "ok";
-        String dbUrl = "jdbc:mysql://localhost:3306/mydb";
-        String dbUname = "root";
-        String dbPassword = "011235813Steve";
 
         HttpSession session = request.getSession();
 
@@ -36,7 +29,6 @@ public class MakeOrderServlet extends HttpServlet {
         String endDate = request.getParameter("end_date");
 
 
-
         int userId= (int) session.getAttribute("id");
         String temp =  session.getAttribute("magazine_id").toString();
         int magazineId = Integer.parseInt(temp);
@@ -45,14 +37,10 @@ public class MakeOrderServlet extends HttpServlet {
         double newBalance = Double.parseDouble(temp2);
         newBalance  = newBalance  - magazinePrise;
 
-     /*  PrintWriter out = response.getWriter();
-        out.print("<html><body>");
-        out.print(user_id+" " + magazine_id+" "+ time_now);
-        out.print("</html></body>");*/
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
+            Connection con = DBCPDataSource.getConnection();
             String sql="INSERT INTO mydb.subscription (start_date, finish_date, status, user_id, magazines_id) " +
                     "VALUES ('"+timeNow+"','"+endDate+"','"+ OrderStatus.ACTIVE+"','"+userId+"','"+magazineId+"')";
 

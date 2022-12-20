@@ -1,5 +1,6 @@
 package com.example.registration.servletAllMagaz;
 
+import com.example.registration.sql.DBCPDataSource;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -20,13 +21,10 @@ public class AddPublisherServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String publisherName = request.getParameter("publisher_name");
-        String dbUrl = "jdbc:mysql://localhost:3306/mydb";
-        String dbUname = "root";
-        String dbPassword = "011235813Steve";
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
+            Connection con = DBCPDataSource.getConnection();
             Statement pst = con.createStatement();
             String sql2 = "INSERT INTO mydb.publishers (publisher_name) VALUES ('" + publisherName + "')";
 

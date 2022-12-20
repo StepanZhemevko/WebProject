@@ -1,33 +1,25 @@
 package com.example.registration.servletUser;
 
+import com.example.registration.sql.DBCPDataSource;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
 @WebServlet(name = "UnblockUserServlet", value = "/UnblockUserServlet")
 public class UnblockUserServlet extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
 
-        String dbUrl = "jdbc:mysql://localhost:3306/mydb";
-        String dbUname = "root";
-        String dbPassword = "011235813Steve";
-
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
+            Connection con = DBCPDataSource.getConnection();
             Statement pst = con.createStatement();
             String sql="update mydb.user set block = '"+0+"' where id= '"+id+"'";
 

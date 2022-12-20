@@ -1,5 +1,6 @@
 package com.example.registration.servletAllMagaz;
 
+import com.example.registration.sql.DBCPDataSource;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -26,15 +27,9 @@ public class AddMagazineServlet extends HttpServlet {
         String category = request.getParameter("category");
         String publisher = request.getParameter("publisher");
 
-        HttpSession session = request.getSession();
-
-        String dbUrl = "jdbc:mysql://localhost:3306/mydb";
-        String dbUname = "root";
-        String dbPassword = "011235813Steve";
-
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
+            Connection con = DBCPDataSource.getConnection();
             Statement pst = con.createStatement();
             String sqlForCategory =  "SELECT id as cat_id FROM mydb.categories where category_name='"+category+"' ";
             ResultSet rs = pst.executeQuery(sqlForCategory);
@@ -47,7 +42,7 @@ public class AddMagazineServlet extends HttpServlet {
         }
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
+            Connection con = DBCPDataSource.getConnection();
             Statement pst = con.createStatement();
 
              String sqlForPublisher =  "SELECT id as pub_id FROM mydb.publishers where publisher_name ='"+publisher+"' ";
@@ -63,7 +58,7 @@ public class AddMagazineServlet extends HttpServlet {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
+            Connection con = DBCPDataSource.getConnection();
             String sql="insert into mydb.magazines (magazines_name, prise, description, image_link, categories_id, publishers_id) " +
                     "values (?,?,?,?,?,?)";
             PreparedStatement preparedStatement = con.prepareStatement(sql);

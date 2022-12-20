@@ -1,5 +1,6 @@
 package com.example.registration.servletWallet;
 
+import com.example.registration.sql.DBCPDataSource;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -15,15 +16,13 @@ public class UpBalanceServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        String dbUrl = "jdbc:mysql://localhost:3306/mydb";
-        String dbUname = "root";
-        String dbPassword = "011235813Steve";
         double newBalance = Double.parseDouble(request.getParameter("amount"));
         int walletId = (int) session.getAttribute("id");
-        double balance = (double) session.getAttribute("balance") + newBalance;
+        double balance = (double) session.getAttribute("balance") ;
+        balance = balance+ newBalance;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
+            Connection con = DBCPDataSource.getConnection();
             Statement pst = con.createStatement();
             String sql = "update mydb.wallet set balance='" + balance + "' where user_id='" + walletId + "'";
 

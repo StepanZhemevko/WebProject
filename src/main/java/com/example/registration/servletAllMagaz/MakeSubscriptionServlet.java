@@ -10,10 +10,6 @@ import java.util.Date;
 
 @WebServlet(name = "MakeSubscriptionServlet", value = "/MakeSubscriptionServlet")
 public class MakeSubscriptionServlet extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -21,11 +17,11 @@ public class MakeSubscriptionServlet extends HttpServlet {
         SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
         Date date = new Date();
         String time = formatter.format(date);
-        session.setAttribute("magazine_id",request.getParameter("magazineId"));
-        session.setAttribute("begin_time",time);
-        session.setAttribute("magazine_name",request.getParameter("magazineName"));
+        session.setAttribute("magazineId",request.getParameter("magazineId"));
+        session.setAttribute("beginTime",time);
+        session.setAttribute("magazineName",request.getParameter("magazineName"));
         session.setAttribute("image",request.getParameter("image"));
-        session.setAttribute("magazine_prise",request.getParameter("magazinePrise"));
+        session.setAttribute("magazinePrise",request.getParameter("magazinePrise"));
         response.sendRedirect("subscription.jsp");
 
     }

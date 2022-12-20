@@ -1,5 +1,6 @@
 package com.example.registration.servletAllMagaz;
 
+import com.example.registration.sql.DBCPDataSource;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -17,13 +18,10 @@ public class DeleteMagazineServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String delete = request.getParameter("delete");
-        String dbUrl = "jdbc:mysql://localhost:3306/mydb";
-        String dbUname = "root";
-        String dbPassword = "011235813Steve";
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
+            Connection con = DBCPDataSource.getConnection();
             Statement pst = con.createStatement();
             String sql = "delete from mydb.magazines where id= '"+delete+"'";
             pst.executeUpdate(sql);

@@ -1,5 +1,6 @@
 package com.example.registration.servletUser;
 
+import com.example.registration.sql.DBCPDataSource;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -20,17 +21,13 @@ public class AddInfoServlet extends HttpServlet {
 
         String login = session.getAttribute("name").toString();
         String password = request.getParameter("password");
-        String nameAndSurname = request.getParameter("name_and_surname");
+        String nameAndSurname = request.getParameter("nameAndSurname");
         String email = request.getParameter("email");
         String telephone = request.getParameter("telephone");
 
-        String dbUrl = "jdbc:mysql://localhost:3306/mydb";
-        String dbUname = "root";
-        String dbPassword = "011235813Steve";
-
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
+            Connection con = DBCPDataSource.getConnection();
             Statement pst = con.createStatement();
             String sql="update mydb.user set password='"+password+"', name_and_surname = '"+nameAndSurname+"'" +
                     ",email='"+email+"',telephone='"+telephone+"' where login= '"+login+"'";

@@ -47,8 +47,8 @@
 <div class="form">
 
     <label><img src="<%= session.getAttribute("image") %>" width="100" height="100"></label>
-    <p><label><fmt:message key="subscription.label.name"/> <%=session.getAttribute("magazine_name")%></label></p>
-    <p><label><fmt:message key="subscription.label.stdate"/> <%=session.getAttribute("begin_time")%></label></p>
+    <p><label><fmt:message key="subscription.label.name"/> <%=session.getAttribute("magazineName")%></label></p>
+    <p><label><fmt:message key="subscription.label.stdate"/> <%=session.getAttribute("beginTime")%></label></p>
     <p><label><fmt:message key="subscription.label.id"/> <%=session.getAttribute("id")%></label></p>
     <p><label><fmt:message key="subscription.label.balance"/> <%=session.getAttribute("balance")%></label></p>
     <form action="MakeOrderServlet" method="post">

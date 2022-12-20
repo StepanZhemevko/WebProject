@@ -59,7 +59,7 @@
     <label>
 
 <textarea name="area" rows="4" cols="40">
-   <fmt:message key="wallet.label.id"/> <%=session.getAttribute("wallet_id")%>
+   <fmt:message key="wallet.label.id"/> <%=session.getAttribute("walletId")%>
    <fmt:message key="wallet.label.balance"/> <%=session.getAttribute("balance")%>
 </textarea>
     </label>

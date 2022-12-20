@@ -1,5 +1,6 @@
 package com.example.registration.servletUser;
 
+import com.example.registration.sql.DBCPDataSource;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -13,28 +14,32 @@ import java.sql.Statement;
 @WebServlet(name = "BlockUserServlet", value = "/BlockUserServlet")
 public class BlockUserServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
-
-    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
-
-        String dbUrl = "jdbc:mysql://localhost:3306/mydb";
-        String dbUname = "root";
-        String dbPassword = "011235813Steve";
-
+        Connection con;
+        Statement pst;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
-            Statement pst = con.createStatement();
-            String sql="update mydb.user set block = '"+1+"' where id= '"+id+"'";
-
-            pst.executeUpdate(sql);
-        } catch (ClassNotFoundException | SQLException e) {
+            con = DBCPDataSource.getConnection();
+            pst = con.createStatement();
+        } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            String sql="update mydb.user set block = '"+1+"' where id= '"+id+"'";
+            pst.executeUpdate(sql);
+
+        } catch (ClassNotFoundException | SQLException e) {
+            throw new RuntimeException(e);
+        }finally {
+            try {
+                pst.close();
+                con.close();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
         response.sendRedirect("admin_page.jsp");
     }
 }

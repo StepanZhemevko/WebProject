@@ -10,9 +10,6 @@ import java.io.PrintWriter;
 @WebFilter(urlPatterns = {"/CabinetServlet","/WalletServlet","/StoreServlet"})
 
 public class CheckBlockFilter implements Filter {
-    @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
-    }
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {

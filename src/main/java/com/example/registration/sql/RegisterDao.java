@@ -34,7 +34,7 @@ public class RegisterDao {
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, member.getLogin());
             preparedStatement.setString(2, member.getPassword());
-            preparedStatement.setString(3, member.getName_and_surname());
+            preparedStatement.setString(3, member.getNameAndSurname());
             preparedStatement.setString(4, member.getEmail());
             preparedStatement.setString(5, member.getTelephone());
             preparedStatement.setBoolean(6, member.isAdmin());

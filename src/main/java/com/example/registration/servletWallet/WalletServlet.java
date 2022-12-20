@@ -1,5 +1,6 @@
 package com.example.registration.servletWallet;
 
+import com.example.registration.sql.DBCPDataSource;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -17,17 +18,22 @@ public class WalletServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String dbUrl = "jdbc:mysql://localhost:3306/mydb";
-        String dbUname = "root";
-        String dbPassword = "011235813Steve";
         HttpSession session = request.getSession();
         int count;
         String temp = session.getAttribute("id").toString();
         int id = Integer.parseInt(temp);
+
+        Connection con;
+        Statement pst;
+        try {
+            con = DBCPDataSource.getConnection();
+            pst = con.createStatement();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
-            Statement pst = con.createStatement();
             String sql ="SELECT COUNT(user_id) as cnt FROM mydb.wallet WHERE user_id = '"+id+"'";
             ResultSet rs = pst.executeQuery(sql);
             while(rs.next()) {
@@ -42,6 +48,13 @@ public class WalletServlet extends HttpServlet {
 
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
+        }finally {
+            try {
+                pst.close();
+                con.close();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
