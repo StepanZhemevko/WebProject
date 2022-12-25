@@ -1,6 +1,9 @@
 package com.example.registration.sql;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Pattern;
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Member implements Serializable{
     private String login;
@@ -10,6 +13,8 @@ public class Member implements Serializable{
     private String telephone;
     private boolean admin = false;
     private boolean block = false;
+
+
 
     public Member(String login, String password, String nameAndSurname, String email, String telephone) {
         this.login = login;
@@ -71,4 +76,6 @@ public class Member implements Serializable{
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
+
+
 }

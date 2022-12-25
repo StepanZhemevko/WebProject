@@ -12,8 +12,10 @@
   <meta charset="utf-8">
   <title>Login</title>
   <link rel = "stylesheet" href="css/formStyle.css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
 </head>
 <body>
+<input type="hidden" id ="status" value="<%= request.getAttribute("status")%>">
 <div class="center">
   <form action="LoginServlet" method="post">
     <div class="txt_field">

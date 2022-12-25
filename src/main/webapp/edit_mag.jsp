@@ -78,10 +78,10 @@
   <tr><form action="EditMagazineServlet" method="post">
     <td><label><%=rs.getInt("id") %></label><input type="hidden" name="magazineId" value="<%=rs.getInt("id") %>"/> </td>
     <td><input type="text" name="magazineName" value="<%= rs.getString("magazines_name")%>" /></td>
-    <td><input type="number" name="magazinePrise" value="<%= rs.getInt("prise")%>" /></td>
+    <td><input type="number" name="magazinePrise" min="0" value="<%= rs.getInt("prise")%>" /></td>
     <td><input type="text" name="magazineDescription" value="<%=rs.getString("description")%>"/></td>
     <td><p><img src="<%=rs.getString("image_link") %>" width="100" height="100"></p>
-      <p><input type="text" name="imageLink" value="<%=rs.getString("image_link")%>"/></p>
+      <p><input type="text" name="imageLink" maxlength="145" value="<%=rs.getString("image_link")%>"/></p>
     </td>
     <td><input type="number" name="magazineCat" value="<%=rs.getInt("categories_id") %>"/></td>
     <td><input type="number" name="magazinePub" value="<%=rs.getInt("publishers_id") %>"/></td>

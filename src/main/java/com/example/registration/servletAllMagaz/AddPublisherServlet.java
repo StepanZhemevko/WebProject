@@ -21,19 +21,38 @@ public class AddPublisherServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String publisherName = request.getParameter("publisher_name");
+        Connection con = null;
+        Statement pst = null;
+        if (publisherName!=null){
+            try {
+                con = DBCPDataSource.getConnection();
+                pst = con.createStatement();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
 
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DBCPDataSource.getConnection();
-            Statement pst = con.createStatement();
-            String sql2 = "INSERT INTO mydb.publishers (publisher_name) VALUES ('" + publisherName + "')";
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
 
-            pst.executeUpdate(sql2);
+                String sql2 = "INSERT INTO mydb.publishers (publisher_name) VALUES ('" + publisherName + "')";
 
-        } catch (ClassNotFoundException | SQLException e) {
-            throw new RuntimeException(e);
+                pst.executeUpdate(sql2);
+
+            } catch (ClassNotFoundException | SQLException e) {
+                throw new RuntimeException(e);
+            } finally {
+                try {
+                    pst.close();
+                    con.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            response.sendRedirect("add_magazine.jsp");
+        }else {
+            response.sendRedirect("error_data.jsp");
         }
-        response.sendRedirect("add_magazine.jsp");
+
 
     }
 

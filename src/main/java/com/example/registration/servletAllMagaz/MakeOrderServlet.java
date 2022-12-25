@@ -29,29 +29,47 @@ public class MakeOrderServlet extends HttpServlet {
         String endDate = request.getParameter("end_date");
 
 
-        int userId= (int) session.getAttribute("id");
-        String temp =  session.getAttribute("magazine_id").toString();
-        int magazineId = Integer.parseInt(temp);
-        double magazinePrise = Double.parseDouble(session.getAttribute("magazine_prise").toString());
-        String temp2 =  session.getAttribute("balance").toString();
-        double newBalance = Double.parseDouble(temp2);
-        newBalance  = newBalance  - magazinePrise;
+        int userId = (int) session.getAttribute("id");
+        int magazineId = (int) session.getAttribute("magazineId");
+        double magazinePrise = Double.parseDouble(session.getAttribute("magazinePrise").toString());
+        double newBalance = Double.parseDouble(session.getAttribute("balance").toString());
+        newBalance = newBalance - magazinePrise;
 
+        Connection con = null;
+        if (session.getAttribute("id") != null || session.getAttribute("magazineId") != null ||
+                session.getAttribute("magazinePrise") != null || session.getAttribute("balance") != null) {
+            if(newBalance>=0) {
+                try {
+                    con = DBCPDataSource.getConnection();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+                try {
+                    Class.forName("com.mysql.jdbc.Driver");
 
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DBCPDataSource.getConnection();
-            String sql="INSERT INTO mydb.subscription (start_date, finish_date, status, user_id, magazines_id) " +
-                    "VALUES ('"+timeNow+"','"+endDate+"','"+ OrderStatus.ACTIVE+"','"+userId+"','"+magazineId+"')";
+                    String sql = "INSERT INTO mydb.subscription (start_date, finish_date, status, user_id, magazines_id) " +
+                            "VALUES ('" + timeNow + "','" + endDate + "','" + OrderStatus.ACTIVE + "','" + userId + "','" + magazineId + "')";
 
-            String sql2 = "update mydb.wallet set balance = '"+newBalance+"' where user_id= '"+userId+"'";
-            PreparedStatement pst = con.prepareStatement(sql);
+                    String sql2 = "update mydb.wallet set balance = '" + newBalance + "' where user_id= '" + userId + "'";
+                    PreparedStatement pst = con.prepareStatement(sql);
 
-            pst.executeUpdate();
-            pst.executeUpdate(sql2);
-        } catch (ClassNotFoundException | SQLException e) {
-            throw new RuntimeException(e);
+                    pst.executeUpdate();
+                    pst.executeUpdate(sql2);
+                } catch (ClassNotFoundException | SQLException e) {
+                    throw new RuntimeException(e);
+                } finally {
+                    try {
+                        con.close();
+                    } catch (SQLException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+                response.sendRedirect("cabinet.jsp");
+            }else {
+                    response.sendRedirect("error.jsp");
+            }
+        } else {
+            response.sendRedirect("error_data.jsp");
         }
-        response.sendRedirect("cabinet.jsp");
-        }
+    }
 }

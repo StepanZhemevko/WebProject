@@ -1,6 +1,4 @@
-<%@ page import="java.sql.DriverManager" %>
-<%@ page import="java.sql.Statement" %>
-<%@ page import="java.sql.ResultSet" %><%--
+<%@ page import="java.sql.*" %><%--
   Created by IntelliJ IDEA.
   User: steve
   Date: 11.10.2022
@@ -49,6 +47,9 @@
       color: azure;
       text-decoration: none;
       font-size: 35px;
+    }
+    form{
+      margin: 1em;
     }
   </style>
     <title>Store</title>
@@ -104,28 +105,47 @@
   }
 %>
 </table>
-<%try{
-  Class.forName("com.mysql.jdbc.Driver");
-  java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","011235813Steve");
-  Statement st = con.createStatement();
-  ResultSet rs2 =st.executeQuery("SELECT * FROM mydb.categories");
-  while(rs2.next()){
-%>
   <form action="GetByCategoryServlet" method="post">
-    <label><%= rs2.getString("category_name")%></label>
-    <input type="checkbox" name="selected" value="<%= rs2.getString("category_name")%> ">
-
+    <%! String driverName = "com.mysql.jdbc.Driver";%>
+    <%!String url = "jdbc:mysql://localhost:3306/mydb";%>
+    <%!String user = "root";%>
+    <%!String psw = "011235813Steve";%>
+    <%
+      Connection con2 = null;
+      PreparedStatement ps = null;
+      try
+      {
+        Class.forName(driverName);
+        con2 = DriverManager.getConnection(url,user,psw);
+        String sql = "SELECT * FROM mydb.categories";
+        ps = con2.prepareStatement(sql);
+        ResultSet rs2 = ps.executeQuery();
+    %>
+    <p>
+      <select name="category">
+        <%
+          while(rs2.next())
+          {
+            String fname = rs2.getString("category_name");
+        %>
+        <option  value="<%=fname%>"><%=fname%> </option>
+        <%
+          }
+        %>
+      </select>
+    </p>
+    <%
+      }
+      catch(SQLException sqe)
+      {
+        out.println(sqe);
+      }
+    %>
     <input type="submit" value="<fmt:message key="store.submit.submit"/>" name="from_category" >
   </form>
-<%
-    }
-  } catch (Exception e) {
-    e.printStackTrace();
-  }
-%>
 
 <form action="SearchByNameServlet" method="post">
-    <input type="text" name="select_name" >
+    <input type="text" name="select_name" required>
   <input type="submit" value="<fmt:message key="store.submit.search"/>" name="search" >
 </form>
 

@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class RegisterDao {
-    private String dbUrl = "jdbc:mysql://localhost:3306/mydb";
+    private  String dbUrl = "jdbc:mysql://localhost:3306/mydb";
     private String dbUname = "root";
     private String dbPassword = "011235813Steve";
     public Connection getConnection() {
@@ -19,15 +19,19 @@ public class RegisterDao {
         return connection;
     }
 
-    public String insert(Member member) {
+    public void insert(Member member) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
 
-        String result = "Ok";
-        Connection connection = getConnection();
+        Connection connection = null;
+        try {
+            connection = DBCPDataSource.getConnection();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
         String sql="insert into mydb.user (login,password,name_and_surname,email,telephone,admin,block) values(?,?,?,?,?,?,?)";
         PreparedStatement preparedStatement;
         try {
@@ -44,8 +48,7 @@ public class RegisterDao {
 
         } catch (SQLException e) {
             e.printStackTrace();
-            result="Not Ok";
         }
-return result;
+
     }
 }

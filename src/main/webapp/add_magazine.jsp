@@ -1,4 +1,5 @@
-<%--
+<%@ page import="com.example.registration.sql.DBCPDataSource" %>
+<%@ page import="java.sql.*" %><%--
   Created by IntelliJ IDEA.
   User: steve
   Date: 18.10.2022
@@ -77,7 +78,7 @@
         <span></span>
 
         <label><fmt:message key="addMagazine.label.prise"/></label>
-        <p><input type="number" name="prise" required></p>
+        <p><input type="number" name="prise" min="0" required></p>
         <span></span>
 
         <label><fmt:message key="addMagazine.label.descr"/></label>
@@ -85,15 +86,80 @@
         <span></span>
 
         <label><fmt:message key="addMagazine.label.image"/></label>
-        <p><input type="text" name="image_link" required></p>
+        <p><input type="text" name="image_link" maxlength="145" required></p>
         <span></span>
 
         <label><fmt:message key="addMagazine.label.categories"/></label>
-        <p><input type="text" name="category"  required> </p>
-        <span></span>
+                <%! String driverName = "com.mysql.jdbc.Driver";%>
+                <%!String url = "jdbc:mysql://localhost:3306/mydb";%>
+                <%!String user = "root";%>
+                <%!String psw = "011235813Steve";%>
+            <%
+                Connection con = null;
+                PreparedStatement ps = null;
+                try
+                {
+                    Class.forName(driverName);
+                    con = DriverManager.getConnection(url,user,psw);
+                    String sql = "SELECT * FROM mydb.categories";
+                    ps = con.prepareStatement(sql);
+                    ResultSet rs = ps.executeQuery();
+            %>
+            <p>
+                <select name="category">
+                    <%
+                        while(rs.next())
+                        {
+                            String fname = rs.getString("category_name");
+                    %>
+                    <option  value="<%=fname%>"><%=fname%> </option>
+                    <%
+                        }
+                    %>
+                </select>
+            </p>
+            <%
+                }
+                catch(SQLException sqe)
+                {
+                    out.println(sqe);
+                }
+            %>
 
+        <span></span>
         <label><fmt:message key="addMagazine.label.publisher"/></label>
-        <p><input type="text" name="publisher"  required>  </p>
+
+        <%
+            Connection con2 = null;
+            PreparedStatement ps2 = null;
+            try
+            {
+                Class.forName(driverName);
+                con2 = DriverManager.getConnection(url,user,psw);
+                String sql2 = "SELECT * FROM mydb.publishers";
+                ps2 = con2.prepareStatement(sql2);
+                ResultSet rs2 = ps2.executeQuery();
+        %>
+        <p>
+            <select name="publisher">
+                <%
+                    while(rs2.next())
+                    {
+                        String fname = rs2.getString("publisher_name");
+                %>
+                <option  value="<%=fname%>"><%=fname%> </option>
+                <%
+                    }
+                %>
+            </select>
+        </p>
+        <%
+            }
+            catch(SQLException sqe)
+            {
+                out.println(sqe);
+            }
+        %>
         <span></span>
 
         <p><input type="submit" value="<fmt:message key="addMagazine.submit"/>"></p>

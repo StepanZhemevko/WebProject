@@ -27,47 +27,47 @@ public class CabinetServlet extends HttpServlet {
         HttpSession session = request.getSession();
         Connection con;
         Statement pst;
-        try {
-            con = DBCPDataSource.getConnection();
-            pst = con.createStatement();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            String sql ="select id,password,name_and_surname,email,telephone,block from mydb.user where login= '"+login+"'";
-            ResultSet rs = pst.executeQuery(sql);
-
-            while(rs.next())
-            {
-                id=rs.getString("id");
-                password = rs.getString("password");
-                nameAndSurname=rs.getString("name_and_surname");
-                email= rs.getString("email");
-                telephone= rs.getString("telephone");
-                block = (boolean) session.getAttribute("block");
-
-                session.setAttribute("id",id);
-                session.setAttribute("password",password);
-                session.setAttribute("nameAndSurname",nameAndSurname);
-                session.setAttribute("email",email);
-                session.setAttribute("telephone",telephone);
-                session.setAttribute("block",block);
-            }
-        } catch (ClassNotFoundException | SQLException e) {
-            throw new RuntimeException(e);
-        }finally {
+        if (login!=null) {
             try {
-                pst.close();
-                con.close();
+                con = DBCPDataSource.getConnection();
+                pst = con.createStatement();
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
+                String sql = "select id,password,name_and_surname,email,telephone,block from mydb.user where login= '" + login + "'";
+                ResultSet rs = pst.executeQuery(sql);
+
+                while (rs.next()) {
+                    id = rs.getString("id");
+                    password = rs.getString("password");
+                    nameAndSurname = rs.getString("name_and_surname");
+                    email = rs.getString("email");
+                    telephone = rs.getString("telephone");
+                    block = (boolean) session.getAttribute("block");
+
+                    session.setAttribute("id", id);
+                    session.setAttribute("password", password);
+                    session.setAttribute("nameAndSurname", nameAndSurname);
+                    session.setAttribute("email", email);
+                    session.setAttribute("telephone", telephone);
+                    session.setAttribute("block", block);
+                }
+            } catch (ClassNotFoundException | SQLException e) {
+                throw new RuntimeException(e);
+            } finally {
+                try {
+                    pst.close();
+                    con.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            response.sendRedirect("add_info.jsp");
+        }else {
+            response.sendRedirect("error_data.jsp");
         }
-
-        response.sendRedirect("add_info.jsp");
-
     }
 
 }

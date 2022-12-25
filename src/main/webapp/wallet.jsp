@@ -67,7 +67,7 @@
     <form action="UpBalanceServlet" method="post">
         <input type="submit" name="replenish" value="<fmt:message key="wallet.label.replenish"/>">
 
-        <input type="number" name="amount" required>
+        <input type="number" name="amount" required min="0">
         <span></span>
         <label><fmt:message key="wallet.label.sum"/></label>
     </form>

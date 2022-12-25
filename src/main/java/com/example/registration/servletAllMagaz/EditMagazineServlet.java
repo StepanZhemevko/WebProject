@@ -25,16 +25,37 @@ public class EditMagazineServlet extends HttpServlet {
         int categoryId= Integer.parseInt(request.getParameter("magazineCat"));
         int publisherId= Integer.parseInt(request.getParameter("magazinePub"));
 
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DBCPDataSource.getConnection();
-            Statement pst = con.createStatement();
-            String sql = "update mydb.magazines set magazines_name = '"+name+"', prise = '"+prise+"', description = '"+description+"', image_link= '"+imageLink+"',categories_id = '"+categoryId+"',publishers_id='"+publisherId+"' where id ='"+id+"' ";
-            pst.executeUpdate(sql);
-        } catch (ClassNotFoundException | SQLException e) {
-            throw new RuntimeException(e);
+
+        Connection con = null;
+        Statement pst = null;
+        if (name!=null||imageLink!=null||request.getParameter("magazineId")!=null||
+                request.getParameter("magazinePrise")!=null||
+                request.getParameter("magazineCat")!=null||request.getParameter("magazinePub")!=null){
+            try {
+                con = DBCPDataSource.getConnection();
+                pst = con.createStatement();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
+                String sql = "update mydb.magazines set magazines_name = '"+name+"', prise = '"+prise+"', description = '"+description+"', image_link= '"+imageLink+"',categories_id = '"+categoryId+"',publishers_id='"+publisherId+"' where id ='"+id+"' ";
+                pst.executeUpdate(sql);
+            } catch (ClassNotFoundException | SQLException e) {
+                throw new RuntimeException(e);
+            }finally {
+                try {
+                    pst.close();
+                    con.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            response.sendRedirect("store.jsp");
+
+        }else{
+            response.sendRedirect("error_data.jsp");
         }
-        response.sendRedirect("store.jsp");
 
        }
 }

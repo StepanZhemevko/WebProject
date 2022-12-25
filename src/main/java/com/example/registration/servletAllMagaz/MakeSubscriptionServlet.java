@@ -17,12 +17,19 @@ public class MakeSubscriptionServlet extends HttpServlet {
         SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
         Date date = new Date();
         String time = formatter.format(date);
-        session.setAttribute("magazineId",request.getParameter("magazineId"));
-        session.setAttribute("beginTime",time);
-        session.setAttribute("magazineName",request.getParameter("magazineName"));
-        session.setAttribute("image",request.getParameter("image"));
-        session.setAttribute("magazinePrise",request.getParameter("magazinePrise"));
-        response.sendRedirect("subscription.jsp");
 
+        if(request.getParameter("magazineId")!=null|| request.getParameter("magazineName")!=null||
+                request.getParameter("image")!=null||request.getParameter("magazinePrise")!=null) {
+
+            session.setAttribute("magazineId", request.getParameter("magazineId"));
+            session.setAttribute("beginTime", time);
+            session.setAttribute("magazineName", request.getParameter("magazineName"));
+            session.setAttribute("image", request.getParameter("image"));
+            session.setAttribute("magazinePrise", request.getParameter("magazinePrise"));
+            response.sendRedirect("subscription.jsp");
+        }
+        else {
+            response.sendRedirect("error.jsp");
+        }
     }
 }

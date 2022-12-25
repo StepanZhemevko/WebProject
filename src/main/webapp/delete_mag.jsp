@@ -35,9 +35,9 @@
 <form action="DeleteMagazineServlet" method="post">
 
     <label style="color: antiquewhite" ><fmt:message key="deleteMag.label.q"/></label>
-    <p><input type="number" name="delete"></p>
+    <p><input type="number" name="delete" min="1" required></p>
     <span></span>
-    <p><input type="submit" value="<fmt:message key="deleteMag.submit"/>"></p>
+    <p><input type="submit" value="<fmt:message key="deleteMag.submit" />"></p>
 
 </form>
 </div>

@@ -30,7 +30,7 @@
             <label><fmt:message key="registration.label.login"/></label>
         </div>
         <div class="txt_field">
-            <input type="password" name="password" required>
+            <input type="password" name="password" minlength="8" required>
             <span></span>
             <label><fmt:message key="registration.label.password"/></label>
         </div>
@@ -47,7 +47,7 @@
             <label><fmt:message key="registration.label.email"/></label>
         </div>
         <div class="txt_field">
-            <input type="tel" name="telephone" required>
+            <input type="tel" name="telephone" minlength=10 pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required >
             <span></span>
             <label><fmt:message key="registration.label.telephone"/></label>
         </div>

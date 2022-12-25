@@ -89,7 +89,7 @@
 <hr>
 <div class="change">
     <form action="AddCategoryServlet" method="post">
-        <input type="text" name="category_name"  required>
+        <input type="text" name="category_name" required>
         <span></span>
         <label><fmt:message key="adminPage.label.catname"/></label>
 
@@ -107,15 +107,21 @@
 </div>
 <hr>
 <div class="center">
+
+
 <h3><fmt:message key="adminPage.label.q1"/> </h3>
+
 <a id="to_create_magazine" href="add_magazine.jsp"><fmt:message key="adminPage.label.create"/></a>
 <hr>
+
+
 <h3><fmt:message key="adminPage.label.q2"/></h3>
 <a id="to_delete_magazine" href="delete_mag.jsp"><fmt:message key="adminPage.label.delete"/></a>
 <hr>
 <h3><fmt:message key="adminPage.label.q3"/></h3>
 <a id="to_edit_magazine" href="edit_mag.jsp"><fmt:message key="adminPage.label.edit"/></a>
 <hr>
+
 <h3><fmt:message key="adminPage.label.q4"/></h3>
 <a id="block_user" href="block_user.jsp"><fmt:message key="adminPage.label.block"/></a>
 </div>

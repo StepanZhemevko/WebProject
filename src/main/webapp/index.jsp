@@ -30,6 +30,11 @@
             width: 60%;
 
         }
+        .check_language{
+            display: flex;
+            justify-content: end;
+            margin: 1em;
+        }
         a{
             font-size: 25px;
             color: azure;
@@ -46,12 +51,14 @@
 
 </head>
 <body>
+<div class="check_language">
 <form>
     <select id="language" name="language" onchange="submit()">
         <option value="en" ${language == 'en' ? 'selected' : ''}>English</option>
         <option value="uk" ${language == 'uk' ? 'selected' : ''}>Ukraine</option>
     </select>
 </form>
+</div>
 <h1>
 
         <label><fmt:message key="index.label.welcome"/></label>

@@ -50,12 +50,12 @@
 <div class="change">
     <form action="AddInfoServlet" method="post">
         <div class="txt_field">
-            <input type="text" name="password" value="<%= session.getAttribute("password") %>" required>
+            <input type="text" name="password" value="<%= session.getAttribute("password") %>" minlength="8" required>
             <span></span>
             <label><fmt:message key="addInfo.label.password" /></label>
         </div>
         <div class="txt_field">
-            <input type="text" name="name_and_surname" value="<%= session.getAttribute("nameAndSurname") %>" required>
+            <input type="text" name="nameAndSurname" value="<%= session.getAttribute("nameAndSurname") %>" required>
             <span></span>
             <label><fmt:message key="addInfo.label.name" /></label>
         </div>
@@ -66,7 +66,7 @@
             <label><fmt:message key="addInfo.label.email" /></label>
         </div>
         <div class="txt_field">
-            <input type="tel" name="telephone" value="<%= session.getAttribute("telephone") %>" required>
+            <input type="tel" name="telephone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" value="<%= session.getAttribute("telephone") %>" minlength="10"  required>
             <span></span>
             <label><fmt:message key="addInfo.label.telephone" /></label>
         </div>

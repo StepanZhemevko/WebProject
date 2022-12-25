@@ -21,18 +21,35 @@ public class CreateWalletServlet extends HttpServlet {
         HttpSession session = request.getSession();
         int walletId = (int) session.getAttribute("id");
         double balance = 0.0;
+        if (session.getAttribute("id") !=null){
+        Connection con;
+        PreparedStatement preparedStatement;
+        try {
+            con = DBCPDataSource.getConnection();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DBCPDataSource.getConnection();
-            String sql="INSERT INTO mydb.wallet (user_id, balance) VALUES ('"+walletId+"','"+balance+"')";
-            PreparedStatement preparedStatement = con.prepareStatement(sql);
+
+            String sql = "INSERT INTO mydb.wallet (user_id, balance) VALUES ('" + walletId + "','" + balance + "')";
+            preparedStatement = con.prepareStatement(sql);
             preparedStatement.executeUpdate();
             response.sendRedirect("wallet.jsp");
 
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
+        } finally {
+            try {
+
+                con.close();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
         }
 
-
+        }else {
+            response.sendRedirect("error_data.jsp");
+        }
     }
 }

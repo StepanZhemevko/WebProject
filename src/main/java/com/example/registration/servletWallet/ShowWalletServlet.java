@@ -21,25 +21,44 @@ public class ShowWalletServlet extends HttpServlet {
         HttpSession session = request.getSession();
         int walletId;
         double balance;
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DBCPDataSource.getConnection();
-            Statement pst = con.createStatement();
-            String temp = session.getAttribute("id").toString();
-            int id = Integer.parseInt(temp);
-            String sql ="SELECT * FROM mydb.wallet WHERE user_id = '"+id+"'";
-
-            ResultSet rs = pst.executeQuery(sql);
-            if (rs.next()){
-                walletId = rs.getInt("user_id");
-                balance = rs.getDouble("balance");
-                session.setAttribute("walletId",walletId);
-                session.setAttribute("balance",balance);
+        String temp = session.getAttribute("id").toString();
+        int id = Integer.parseInt(temp);
+        if (session.getAttribute("id") != null) {
+            Connection con;
+            Statement pst;
+            try {
+                con = DBCPDataSource.getConnection();
+                pst = con.createStatement();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
             }
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
 
-        } catch (ClassNotFoundException | SQLException e) {
-            throw new RuntimeException(e);
+
+                String sql = "SELECT * FROM mydb.wallet WHERE user_id = '" + id + "'";
+
+                ResultSet rs = pst.executeQuery(sql);
+                if (rs.next()) {
+                    walletId = rs.getInt("user_id");
+                    balance = rs.getDouble("balance");
+                    session.setAttribute("walletId", walletId);
+                    session.setAttribute("balance", balance);
+                }
+
+            } catch (ClassNotFoundException | SQLException e) {
+                throw new RuntimeException(e);
+            } finally {
+                try {
+                    pst.close();
+                    con.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+                response.sendRedirect("wallet.jsp");
+            }
+        }else {
+            response.sendRedirect("error_data.jsp");
         }
-        response.sendRedirect("wallet.jsp");
     }
 }

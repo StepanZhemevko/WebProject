@@ -25,18 +25,36 @@ public class AddInfoServlet extends HttpServlet {
         String email = request.getParameter("email");
         String telephone = request.getParameter("telephone");
 
+        Connection con = null;
+        Statement pst = null;
+        if (session.getAttribute("name")!=null||request.getParameter("password")!=null||request.getParameter("nameAndSurname")!=null||
+                request.getParameter("email")!=null||request.getParameter("telephone")!=null){
+        try {
+            con = DBCPDataSource.getConnection();
+            pst = con.createStatement();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DBCPDataSource.getConnection();
-            Statement pst = con.createStatement();
-            String sql="update mydb.user set password='"+password+"', name_and_surname = '"+nameAndSurname+"'" +
-                    ",email='"+email+"',telephone='"+telephone+"' where login= '"+login+"'";
+
+            String sql = "update mydb.user set password='" + password + "', name_and_surname = '" + nameAndSurname + "'" +
+                    ",email='" + email + "',telephone='" + telephone + "' where login= '" + login + "'";
 
             pst.executeUpdate(sql);
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
+        } finally {
+            try {
+                pst.close();
+                con.close();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
         }
         response.sendRedirect("cabinet.jsp");
-
+        }else {
+            response.sendRedirect("error_data.jsp");
+        }
     }
 }

@@ -61,16 +61,23 @@
             padding: 0.5em;
             font-size:150%;
         }
+        .check_language{
+            display: flex;
+            justify-content: end;
+            margin: 1em;
+        }
     </style>
     <title>Personal Cabinet</title>
 </head>
 <body>
+<div class="check_language">
 <form>
     <select id="language" name="language" onchange="submit()">
         <option value="en" ${language == 'en' ? 'selected' : ''}>English</option>
         <option value="uk" ${language == 'uk' ? 'selected' : ''}>Ukraine</option>
     </select>
 </form>
+</div>
 <div class="author" >
     <form action="CabinetServlet" method="post">
         <input type="submit" name="login" value="<%= session.getAttribute("name") %>">

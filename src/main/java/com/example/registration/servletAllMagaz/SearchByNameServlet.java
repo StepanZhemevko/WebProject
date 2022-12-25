@@ -12,7 +12,11 @@ public class SearchByNameServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("select_name");
         HttpSession session = request.getSession();
-        session.setAttribute("mag_name",name);
-        response.sendRedirect("by_name.jsp");
-    }
+        if (request.getParameter("select_name")!=null){
+            session.setAttribute("mag_name",name);
+            response.sendRedirect("by_name.jsp");
+        }else{
+            response.sendRedirect("error_data.jsp");
+        }
+        }
 }

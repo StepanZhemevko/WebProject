@@ -18,6 +18,7 @@ public class BlockUserServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         Connection con;
         Statement pst;
+        if (request.getParameter("id")!=null){
         try {
             con = DBCPDataSource.getConnection();
             pst = con.createStatement();
@@ -41,5 +42,8 @@ public class BlockUserServlet extends HttpServlet {
         }
 
         response.sendRedirect("admin_page.jsp");
+        }else {
+            response.sendRedirect("error_data.jsp");
+        }
     }
 }
