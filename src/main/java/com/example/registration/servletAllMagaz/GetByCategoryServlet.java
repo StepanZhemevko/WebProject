@@ -36,7 +36,7 @@ public class GetByCategoryServlet extends HttpServlet {
                 } else {
 
                     request.setAttribute("status", "failed");
-                    dispatcher = request.getRequestDispatcher("store.jsp");
+                    dispatcher = request.getRequestDispatcher("store.jsp?page=1");
                 }
                 dispatcher.forward(request, response);
             } catch (ClassNotFoundException | SQLException e) {

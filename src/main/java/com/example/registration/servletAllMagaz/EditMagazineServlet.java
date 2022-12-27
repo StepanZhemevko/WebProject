@@ -51,7 +51,7 @@ public class EditMagazineServlet extends HttpServlet {
                     throw new RuntimeException(e);
                 }
             }
-            response.sendRedirect("store.jsp");
+            response.sendRedirect("store.jsp?page=1");
 
         }else{
             response.sendRedirect("error_data.jsp");

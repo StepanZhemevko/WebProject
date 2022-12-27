@@ -10,11 +10,11 @@ import java.io.IOException;
 public class StoreServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/store.jsp").forward(request, response);
+        request.getRequestDispatcher("/store.jsp?page=1").forward(request, response);
     }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.sendRedirect("store.jsp");
+        response.sendRedirect("store.jsp?page=1");
 
     }
 }

@@ -11,10 +11,7 @@ import java.sql.*;
 
 @WebServlet(name = "ShowWalletServlet", value = "/ShowWalletServlet")
 public class ShowWalletServlet extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -11,11 +11,6 @@ import java.sql.*;
 @WebServlet(name = "AddMagazineServlet", value = "/AddMagazineServlet")
 public class AddMagazineServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
-
-    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String magazineName = request.getParameter("magazine_name");
         double prise = Double.parseDouble(request.getParameter("prise"));
@@ -112,8 +107,8 @@ public class AddMagazineServlet extends HttpServlet {
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
-                response.sendRedirect("store.jsp");
             }
+            response.sendRedirect("store.jsp?page=1");
         } else {
             response.sendRedirect("error_data.jsp");
         }

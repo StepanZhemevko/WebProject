@@ -10,10 +10,6 @@ import java.sql.*;
 
 @WebServlet(name = "DeleteMagazineServlet", value = "/DeleteMagazineServlet")
 public class DeleteMagazineServlet extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -44,7 +40,7 @@ public class DeleteMagazineServlet extends HttpServlet {
                     throw new RuntimeException(e);
                 }
             }
-            response.sendRedirect("store.jsp");
+            response.sendRedirect("store.jsp?page=1");
         } else {
             response.sendRedirect("error_data.jsp");
         }

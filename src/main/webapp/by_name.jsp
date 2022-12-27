@@ -34,6 +34,10 @@
       text-decoration: none;
       font-size: 35px;
     }
+    .center{
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
   <title>Search by name</title>
 </head>
@@ -42,7 +46,7 @@
   <a id="my_cabinet" href="cabinet.jsp" >My Cabinet</a>
 </div>
 <hr>
-<table border="1" width="60%">
+<table class="center" border="1" width="60%">
   <tr>
     <td><b><fmt:message key="store.label.mag#"/></b></td>
     <td><b><fmt:message key="store.label.name"/></b></td>
