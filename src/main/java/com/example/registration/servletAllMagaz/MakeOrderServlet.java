@@ -30,7 +30,7 @@ public class MakeOrderServlet extends HttpServlet {
 
 
         int userId = (int) session.getAttribute("id");
-        int magazineId = (int) session.getAttribute("magazineId");
+        int magazineId = Integer.parseInt((String) session.getAttribute("magazineId"));
         double magazinePrise = Double.parseDouble(session.getAttribute("magazinePrise").toString());
         double newBalance = Double.parseDouble(session.getAttribute("balance").toString());
         newBalance = newBalance - magazinePrise;

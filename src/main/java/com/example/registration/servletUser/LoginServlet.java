@@ -21,6 +21,7 @@ public class LoginServlet extends HttpServlet {
         boolean block;
         HttpSession session = request.getSession();
         Connection con = null;
+        request.setAttribute("status", "failed");
         if (login!=null||password!=null){
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -45,7 +46,6 @@ public class LoginServlet extends HttpServlet {
                 request.setAttribute("status", "success");
                 response.sendRedirect("cabinet.jsp");
             } else {
-                request.setAttribute("status", "failed");
                 response.sendRedirect("login.jsp");
             }
         } catch (SQLException e) {

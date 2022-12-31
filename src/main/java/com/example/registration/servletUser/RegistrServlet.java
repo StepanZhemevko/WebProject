@@ -13,7 +13,7 @@ import java.sql.*;
 @WebServlet(name = "RegistrServlet", value = "/RegistrServlet")
 public class RegistrServlet extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
         String nameAndSurname = request.getParameter("name_and_surname");
@@ -32,7 +32,7 @@ public class RegistrServlet extends HttpServlet {
                 stat.setString(1, login);
                 rst = stat.executeQuery();
                 if (rst.next()) {
-                    response.sendRedirect("login.jsp");
+                    response.sendRedirect("error_data.jsp");
                 } else {
                     assert password != null;
                     if (password.length() < 8 || telephone.length() < 10) {

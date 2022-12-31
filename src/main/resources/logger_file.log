@@ -1296,3 +1296,502 @@
 27 12 2022 19:38:36 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{mag_name,Big Fish}
 27 12 2022 19:38:36 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{id,15}
 27 12 2022 19:38:36 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:45:44 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=127.0.0.1
+29 12 2022 15:45:48 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - Session Created:: ID=875259996C85085BCD2A8365DED44B32
+29 12 2022 15:45:48 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{language,en}
+29 12 2022 15:45:49 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:45:49 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:45:49 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=127.0.0.1
+29 12 2022 15:45:50 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:45:50 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - Session Created:: ID=AA7FB65DF73A01B7AD278001E8C1525A
+29 12 2022 15:45:50 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{language,en}
+29 12 2022 15:45:50 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:45:50 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:45:50 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:45:52 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:45:53 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+29 12 2022 15:45:53 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:45:53 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:45:53 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:46:14 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:46:15 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:46:15 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:46:16 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+29 12 2022 15:46:16 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:46:16 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:46:16 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:47:37 [RMI TCP Connection(5)-127.0.0.1] INFO  com.example.registration.Listener.Listener  - Session Destroyed:: ID=875259996C85085BCD2A8365DED44B32
+29 12 2022 15:47:37 [RMI TCP Connection(5)-127.0.0.1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{language,en}
+29 12 2022 15:47:37 [RMI TCP Connection(5)-127.0.0.1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:47:37 [RMI TCP Connection(5)-127.0.0.1] INFO  com.example.registration.Listener.Listener  - Session Destroyed:: ID=AA7FB65DF73A01B7AD278001E8C1525A
+29 12 2022 15:47:37 [RMI TCP Connection(5)-127.0.0.1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{language,en}
+29 12 2022 15:47:37 [RMI TCP Connection(5)-127.0.0.1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:47:53 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:47:53 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - Session Created:: ID=E28A15D801BFFC6D0118BEA5376E16E2
+29 12 2022 15:47:53 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{language,en}
+29 12 2022 15:47:53 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:47:53 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:47:53 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:48:16 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:48:17 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:48:17 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:48:17 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:49:15 [http-nio-8080-exec-11] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:49:16 [http-nio-8080-exec-11] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:49:16 [http-nio-8080-exec-12] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:49:16 [http-nio-8080-exec-12] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+29 12 2022 15:49:16 [http-nio-8080-exec-12] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:49:16 [http-nio-8080-exec-12] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 15:49:16 [http-nio-8080-exec-12] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 15:49:42 [main] INFO  com.example.registration.Listener.Listener  - Session Destroyed:: ID=E28A15D801BFFC6D0118BEA5376E16E2
+29 12 2022 15:49:42 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{language,en}
+29 12 2022 15:49:42 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:46:58 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=127.0.0.1
+29 12 2022 16:47:00 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - Session Created:: ID=3D27524FFCDFB777F136135C1D74BF4A
+29 12 2022 16:47:00 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{language,en}
+29 12 2022 16:47:00 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:47:00 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:47:00 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=127.0.0.1
+29 12 2022 16:47:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:47:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - Session Created:: ID=242DE04DED0F5DDDAFB42FA897C35C27
+29 12 2022 16:47:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{language,en}
+29 12 2022 16:47:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:47:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:47:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:47:10 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:47:10 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+29 12 2022 16:47:10 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:47:10 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:47:10 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:47:51 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:47:52 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:47:52 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:47:52 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+29 12 2022 16:47:52 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:47:52 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:47:52 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:48:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:48:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{name,cat}
+29 12 2022 16:48:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{admin,false}
+29 12 2022 16:48:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{block,false}
+29 12 2022 16:48:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{id,33}
+29 12 2022 16:48:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:48:01 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:48:02 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+29 12 2022 16:48:02 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:48:02 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:48:02 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:48:05 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:48:05 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+29 12 2022 16:48:05 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:48:05 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:48:05 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+29 12 2022 16:48:10 [main] INFO  com.example.registration.Listener.Listener  - Session Destroyed:: ID=3D27524FFCDFB777F136135C1D74BF4A
+29 12 2022 16:48:10 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{language,en}
+29 12 2022 16:48:10 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+29 12 2022 16:48:10 [main] INFO  com.example.registration.Listener.Listener  - Session Destroyed:: ID=242DE04DED0F5DDDAFB42FA897C35C27
+29 12 2022 16:48:10 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{name,cat}
+29 12 2022 16:48:10 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{admin,false}
+29 12 2022 16:48:10 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{language,en}
+29 12 2022 16:48:10 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{block,false}
+29 12 2022 16:48:10 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{id,33}
+29 12 2022 16:48:10 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 14:56:15 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=127.0.0.1
+31 12 2022 14:56:20 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - Session Created:: ID=15F33DCFABA2346D025A0BD9C9B90CF3
+31 12 2022 14:56:20 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{language,en}
+31 12 2022 14:56:20 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 14:56:20 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 14:56:20 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=127.0.0.1
+31 12 2022 14:56:21 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 14:56:21 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - Session Created:: ID=D0B269C783D609BE35294360EA92535D
+31 12 2022 14:56:21 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{language,en}
+31 12 2022 14:56:21 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 14:56:21 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 14:56:21 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 14:57:16 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 14:57:17 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 14:57:17 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 14:57:17 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 14:57:17 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 14:57:28 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 14:57:29 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 14:57:29 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 14:57:29 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 14:57:29 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 14:57:29 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 14:57:29 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 14:57:35 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 14:57:35 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{name,stepan}
+31 12 2022 14:57:35 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{admin,true}
+31 12 2022 14:57:35 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{block,false}
+31 12 2022 14:57:35 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{id,15}
+31 12 2022 14:57:35 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 14:57:35 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 14:57:36 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 14:57:36 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 14:57:36 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 14:57:36 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 14:57:39 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 14:57:40 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 14:57:40 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 14:57:40 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 14:57:40 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:00:13 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:00:13 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:00:13 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:00:13 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:00:13 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:09:31 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:09:31 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:09:31 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:09:31 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:09:31 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:09:39 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:09:39 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,uk}
+31 12 2022 15:09:39 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:09:39 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:09:39 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:10:24 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:10:24 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:10:24 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:10:24 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:10:24 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:10:26 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:10:26 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,uk}
+31 12 2022 15:10:26 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:10:26 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:10:26 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:10:28 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:10:28 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:10:28 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:10:28 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:10:28 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:10:42 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:10:42 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{name,stepan}
+31 12 2022 15:10:42 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{admin,true}
+31 12 2022 15:10:42 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{block,false}
+31 12 2022 15:10:42 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{id,15}
+31 12 2022 15:10:42 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:10:42 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:10:42 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:10:42 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:10:42 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:10:42 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:25 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:25 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:25 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:26 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:11:26 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:11:26 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:11:26 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:32 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:32 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:11:32 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:11:32 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:11:32 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:34 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:34 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:11:34 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:11:34 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:11:34 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:36 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:36 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:11:36 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:11:36 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:11:36 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:45 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:46 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:11:46 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:11:46 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:11:46 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:49 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:11:50 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:11:50 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:11:50 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:11:50 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:06 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:06 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{cat_id,3}
+31 12 2022 15:12:06 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:12:06 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:06 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:06 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:12 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:12 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{magazineId,9}
+31 12 2022 15:12:12 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{beginTime,12/31/2022}
+31 12 2022 15:12:12 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{magazineName,new game}
+31 12 2022 15:12:12 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{image,http://surl.li/efaku}
+31 12 2022 15:12:12 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{magazinePrise,90}
+31 12 2022 15:12:12 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:12 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:12 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:12:12 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:12 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:12 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:19 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:19 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:12:19 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:19 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:19 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:21 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:21 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:21 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:21 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:12:21 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:21 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:21 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:23 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:23 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{walletId,15}
+31 12 2022 15:12:23 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{balance,610.0}
+31 12 2022 15:12:23 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:23 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:23 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:12:23 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:23 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:23 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:38 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:38 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:12:38 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:38 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:38 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:41 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:41 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:41 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:41 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:12:41 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:41 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:41 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:44 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:44 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{magazineId,9}
+31 12 2022 15:12:44 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{beginTime,12/31/2022}
+31 12 2022 15:12:44 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{magazineName,new game}
+31 12 2022 15:12:44 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{image,http://surl.li/efaku}
+31 12 2022 15:12:44 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{magazinePrise,90}
+31 12 2022 15:12:44 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:44 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:12:44 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:12:44 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:44 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:12:44 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:13:00 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:13:00 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:13:15 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:13:15 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - Session Destroyed:: ID=15F33DCFABA2346D025A0BD9C9B90CF3
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{language,en}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - Session Destroyed:: ID=D0B269C783D609BE35294360EA92535D
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{image,http://surl.li/efaku}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{walletId,15}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{magazinePrise,90.0}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{admin,true}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{language,en}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{magazineName,new game}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{balance,610.0}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{cat_id,3}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{name,stepan}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{block,false}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{id,15}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{beginTime,12/31/2022}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{magazineId,9}
+31 12 2022 15:15:13 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:35 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=127.0.0.1
+31 12 2022 15:15:38 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - Session Created:: ID=4850B144ABA05EBD17F7A11370F7AA5F
+31 12 2022 15:15:38 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{language,en}
+31 12 2022 15:15:38 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:38 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:38 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=127.0.0.1
+31 12 2022 15:15:39 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:39 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - Session Created:: ID=61E2D53263EE3B01EA8471D8BB1D98B8
+31 12 2022 15:15:39 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{language,en}
+31 12 2022 15:15:39 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:39 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:39 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:43 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:44 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:15:44 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:44 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:44 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:51 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:52 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{name,stepan}
+31 12 2022 15:15:52 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{admin,true}
+31 12 2022 15:15:52 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{block,false}
+31 12 2022 15:15:52 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{id,15}
+31 12 2022 15:15:52 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:52 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:53 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:15:53 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:53 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:53 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:56 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:56 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:56 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:57 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:15:57 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:57 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:57 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:59 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:59 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:59 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:15:59 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:15:59 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:59 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:15:59 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:01 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:01 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{walletId,15}
+31 12 2022 15:16:01 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{balance,610.0}
+31 12 2022 15:16:01 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:16:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:16:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:16:01 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:06 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:06 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:16:06 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:16:06 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:16:06 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:10 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:10 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:10 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:10 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:16:10 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:16:10 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:16:10 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:12 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:12 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{magazineId,9}
+31 12 2022 15:16:12 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{beginTime,12/31/2022}
+31 12 2022 15:16:12 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{magazineName,new game}
+31 12 2022 15:16:12 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{image,http://surl.li/efaku}
+31 12 2022 15:16:12 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{magazinePrise,90.0}
+31 12 2022 15:16:12 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:12 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:13 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:16:13 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:16:13 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:16:13 [http-nio-8080-exec-2] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:19 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:19 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:19 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:19 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:16:19 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:16:19 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:16:19 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:35 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:35 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:35 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:16:35 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:16:35 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:16:35 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:16:35 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:02 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:02 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute added::{mag_name,new game}
+31 12 2022 15:17:02 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:02 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:03 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:17:03 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:03 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:03 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:11 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:11 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{mag_name,new game}
+31 12 2022 15:17:11 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:11 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:11 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:17:11 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:11 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:11 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:14 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:14 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:17:14 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:14 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:14 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:19 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:20 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:17:20 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:20 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:20 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:23 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:24 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:17:24 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:24 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:24 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:29 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:29 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:17:29 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:29 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:29 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:35 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:35 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:17:35 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:35 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:35 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:57 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:17:57 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:17:57 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:57 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:17:57 [http-nio-8080-exec-5] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:08 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:08 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:08 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:08 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:18:08 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:18:08 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:18:08 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:10 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:10 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:18:10 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:18:10 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:18:10 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:13 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:13 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:18:13 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:18:13 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:18:13 [http-nio-8080-exec-1] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:19 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:19 [http-nio-8080-exec-10] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:19 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:19 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:18:19 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:18:19 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:18:19 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:32 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:32 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{name,stepan}
+31 12 2022 15:18:32 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{admin,true}
+31 12 2022 15:18:32 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{block,false}
+31 12 2022 15:18:32 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{id,15}
+31 12 2022 15:18:32 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:32 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:32 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:18:32 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:18:32 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:18:32 [http-nio-8080-exec-6] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:39 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:39 [http-nio-8080-exec-7] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:44 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:44 [http-nio-8080-exec-9] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:48 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:18:48 [http-nio-8080-exec-8] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:19:36 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:19:36 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{language,en}
+31 12 2022 15:19:36 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:19:36 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletContext attribute replaced::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:19:36 [http-nio-8080-exec-3] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:20:56 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest initialized. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:20:56 [http-nio-8080-exec-4] INFO  com.example.registration.Listener.Listener  - ServletRequest destroyed. Remote IP=0:0:0:0:0:0:0:1
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - Session Destroyed:: ID=61E2D53263EE3B01EA8471D8BB1D98B8
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{walletId,15}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{image,http://surl.li/efaku}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{magazinePrise,90.0}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{admin,false}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{language,en}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{magazineName,new game}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{balance,610.0}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{name,tom}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{block,true}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{mag_name,new }
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{id,16}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{beginTime,12/31/2022}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{magazineId,9}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - Session Destroyed:: ID=4850B144ABA05EBD17F7A11370F7AA5F
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{language,en}
+31 12 2022 15:21:20 [main] INFO  com.example.registration.Listener.Listener  - ServletContext attribute removed::{jakarta.servlet.jsp.jstl.fmt.request.charset,UTF-8}

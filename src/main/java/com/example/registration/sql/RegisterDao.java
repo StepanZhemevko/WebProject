@@ -1,25 +1,11 @@
 package com.example.registration.sql;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class RegisterDao {
-    private  String dbUrl = "jdbc:mysql://localhost:3306/mydb";
-    private String dbUname = "root";
-    private String dbPassword = "011235813Steve";
-    public Connection getConnection() {
-        Connection connection;
-        try {
-            connection = DriverManager.getConnection(dbUrl, dbUname, dbPassword);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        return connection;
-    }
-
-    public void insert(Member member) {
+    public boolean insert(Member member) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {
@@ -43,11 +29,13 @@ public class RegisterDao {
             preparedStatement.setString(5, member.getTelephone());
             preparedStatement.setBoolean(6, member.isAdmin());
             preparedStatement.setBoolean(7, member.isBlock());
+            int result = preparedStatement.executeUpdate();
 
-           preparedStatement.executeUpdate();
+            return result == 1;
 
         } catch (SQLException e) {
             e.printStackTrace();
+            return false;
         }
 
     }

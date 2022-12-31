@@ -17,7 +17,7 @@ public class MagazineDao {
         return con;
     }
     public static List<Magazine> getRecords(int start, int total){
-        List<Magazine> list=new ArrayList<Magazine>();
+        List<Magazine> list= new ArrayList<>();
         try{
             Connection con=getConnection();
             PreparedStatement ps=con.prepareStatement(

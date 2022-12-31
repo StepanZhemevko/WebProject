@@ -11,7 +11,7 @@ import java.sql.*;
 @WebServlet(name = "CreateWalletServlet", value = "/CreateWalletServlet")
 public class CreateWalletServlet extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         HttpSession session = request.getSession();
         int walletId = (int) session.getAttribute("id");
